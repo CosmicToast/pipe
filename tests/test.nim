@@ -26,7 +26,5 @@ suite "Pipe operator sanity":
     check(sum(1,2,3) == 1 |> sum(2, 3))
 
   test "Variables can't be called":
-    # nim currently emits a compile error here, which can't be caught by me
-    skip()
-    #const x = 5
-    #const y = 5 |> x
+    const x = 5
+    when compiles(5 |> x): fail()
