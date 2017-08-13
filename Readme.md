@@ -1,5 +1,7 @@
 # Pipe #
 
+[![license]](License.md)
+
 A pipe operator for nim, as seen in functional languages.
 
 ## Origins ##
@@ -19,3 +21,5 @@ Please take a look in tests/test.nim for examples, but here's a tl;dr:
 # is equivalent to
 foo(1+2)
 ```
+
+[license]: https://img.shields.io/github/license/5pacetoast/pipe.svg
